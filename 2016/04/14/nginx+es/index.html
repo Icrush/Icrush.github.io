@@ -3,17 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Icrush&#39;s place</title>
+  <title>利用nginx为Elasticsearch配置权限验证 - Icrush&#39;s place</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Icrush's place">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="前言Elasticsearch的流行,使数据的安全显得尤为重要,当前官方提供的权限验证插件Shield,是一个商业版本,对于很多产品线来说是不合适的,不过nginx作为一个强大的开源webserver,可以利用其代理功能间接实现ES的权限验证功能
+Todo首先利用apache的htpasswd工具生成nginx的http auth basic 密码123htpasswd -c passwdfile">
+<meta property="og:type" content="article">
+<meta property="og:title" content="利用nginx为Elasticsearch配置权限验证">
+<meta property="og:url" content="http://yoursite.com/2016/04/14/nginx+es/index.html">
 <meta property="og:site_name" content="Icrush's place">
-<meta property="og:description">
+<meta property="og:description" content="前言Elasticsearch的流行,使数据的安全显得尤为重要,当前官方提供的权限验证插件Shield,是一个商业版本,对于很多产品线来说是不合适的,不过nginx作为一个强大的开源webserver,可以利用其代理功能间接实现ES的权限验证功能
+Todo首先利用apache的htpasswd工具生成nginx的http auth basic 密码123htpasswd -c passwdfile">
+<meta property="og:updated_time" content="2016-04-19T14:56:37.070Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Icrush's place">
-<meta name="twitter:description">
+<meta name="twitter:title" content="利用nginx为Elasticsearch配置权限验证">
+<meta name="twitter:description" content="前言Elasticsearch的流行,使数据的安全显得尤为重要,当前官方提供的权限验证插件Shield,是一个商业版本,对于很多产品线来说是不合适的,不过nginx作为一个强大的开源webserver,可以利用其代理功能间接实现ES的权限验证功能
+Todo首先利用apache的htpasswd工具生成nginx的http auth basic 密码123htpasswd -c passwdfile">
   
   
   <link href="/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
@@ -41,16 +45,15 @@
     </div>
   </div>
 </header>
-    <section id="main" class="outer">
-      <article id="post-nginx+es" class="article article-type-post" itemscope itemprop="blogPost">
+    <section id="main" class="outer"><article id="post-nginx+es" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/14/nginx+es/">利用nginx为Elasticsearch配置权限验证</a>
+    <h1 class="article-title" itemprop="name">
+      利用nginx为Elasticsearch配置权限验证
     </h1>
   
 
@@ -75,12 +78,17 @@
     </div>
     
     
+      <footer class="article-footer">
+        
+      </footer>
+    
   </div>
+  
+    
   
 </article>
 
-
-    </section>
+</section>
     <footer id="footer">
   
   <div class="outer">
